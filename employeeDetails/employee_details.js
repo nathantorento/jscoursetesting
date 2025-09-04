@@ -26,7 +26,7 @@ function displayHREmployees() {
     const hrEmployees = employees
         .filter(employee => employee.department === 'HR');
     const hrEmployeesDisplay = hrEmployees
-        .map(employee => `<p>${employee.id}: ${employee.name} - ${employee.department} - ${employee.salary}</p>`)
+        .map(employee => `<p>${employee.id}: ${employee.name} - ${employee.department} - $${employee.salary}</p>`)
         .join('');
     document.getElementById('employeesDetails').innerHTML = hrEmployeesDisplay || 'No employees found.';
 }
@@ -47,7 +47,7 @@ function findBySpecializationJavascript() {
         .filter(employee => employee.specialization === 'Javascript');
     if (employeesSpecializedJavascript.length) {
         document.getElementById('employeesDetails').innerHTML = employeesSpecializedJavascript
-            .map(employee => `<p>${employee.id}: ${employee.name} - ${employee.department} - ${employee.salary} - ${employee.specialization}`)
+            .map(employee => `<p>${employee.id}: ${employee.name} - ${employee.department} - ${employee.salary} - ${employee.specialization}</p>`)
             .join('');
     } else {
         document.getElementById('employeesDetails').innerHTML = 'No employees found specializing in Javascript.';
