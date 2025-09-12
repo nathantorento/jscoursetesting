@@ -1,0 +1,56 @@
+* {
+    list-style: none;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+h1 {
+    text-align: left;
+}
+
+.menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
+    transition: color 1s ease, font-style 1s ease;
+}
+
+.menu a:hover {
+    color: blue;
+    text-decoration: underline;
+    font-size: 20px;
+
+    transition: none;
+}
+
+.menu a.active {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+
+    transition: none;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+}
+
+#profile-pic {
+    width: 200px;
+}
+
+.skill-logo {
+    width: 20px;
+}
